@@ -1,0 +1,19 @@
+Um Servlet Container, também conhecido como um Contêiner Servlet, é um componente de software que fornece um ambiente de tempo de execução para a execução de Servlets. Servlets são componentes Java usados para criar aplicativos da web dinâmicos. O Servlet Container é uma parte fundamental da arquitetura Java EE (Java Platform, Enterprise Edition) ou Jakarta EE (após a mudança de nome), que é usada para desenvolver aplicativos corporativos baseados na plataforma Java.
+
+A principal função de um Servlet Container é gerenciar o ciclo de vida dos Servlets e fornecer serviços essenciais para o processamento de solicitações e respostas HTTP em aplicativos da web. Alguns dos principais recursos e responsabilidades de um Servlet Container incluem:
+
+1. **Gerenciamento do ciclo de vida dos Servlets**: Um Servlet Container cuida da inicialização, destruição e reutilização de instâncias de Servlets, garantindo que eles estejam prontos para processar solicitações HTTP.
+
+2. **Tratamento de solicitações e respostas**: O Servlet Container recebe solicitações HTTP dos clientes (navegadores da web, por exemplo) e as direciona para os Servlets correspondentes. Ele também processa as respostas dos Servlets e as envia de volta aos clientes.
+
+3. **Gerenciamento de threads**: Um Servlet Container gerencia um pool de threads para manipular solicitações concorrentes. Isso permite que várias solicitações sejam processadas simultaneamente de forma eficiente.
+
+4. **Suporte a sessões**: O Servlet Container geralmente oferece suporte para o gerenciamento de sessões do usuário. Isso permite que os aplicativos da web mantenham informações de estado entre várias solicitações de um mesmo usuário.
+
+5. **Gerenciamento de segurança**: O Servlet Container pode implementar políticas de segurança, autenticação e autorização para proteger os recursos do aplicativo.
+
+6. **Mapeamento de URLs**: Ele também gerencia o mapeamento de URLs para Servlets, direcionando solicitações para os Servlets corretos com base em padrões de URL ou configurações específicas.
+
+7. **Integração com outras tecnologias**: Além de Servlets, muitos Servlet Containers suportam outras tecnologias Java EE, como JSP (JavaServer Pages), EJB (Enterprise JavaBeans) e CDI (Contexts and Dependency Injection).
+
+Exemplos populares de Servlet Containers incluem o Apache Tomcat, o Eclipse Jetty, o WildFly (anteriormente conhecido como JBoss) e o GlassFish, entre outros. Esses containers são amplamente utilizados para implantar aplicativos da web Java EE/Jakarta EE e fornecer um ambiente de execução robusto e escalável para eles.
