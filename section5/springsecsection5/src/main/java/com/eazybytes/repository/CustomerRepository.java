@@ -1,6 +1,6 @@
 package com.eazybytes.repository;
 
-import com.eazybytes.model.Customer;
+import com.eazybytes.model.entities.Customer;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

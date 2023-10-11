@@ -1,4 +1,4 @@
-package com.eazybytes.model;
+package com.eazybytes.model.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

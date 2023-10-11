@@ -1,6 +1,6 @@
 package com.eazybytes.controller;
 
-import com.eazybytes.model.Customer;
+import com.eazybytes.model.entities.Customer;
 import com.eazybytes.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

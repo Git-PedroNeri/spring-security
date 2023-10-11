@@ -1,6 +1,6 @@
 package com.eazybytes.config;
 
-import com.eazybytes.model.Customer;
+import com.eazybytes.model.entities.Customer;
 import com.eazybytes.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
@@ -16,6 +16,9 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Classe responsavel por implementar um Provedor de Autenticação do tipo UsernamePwdAuthentication
+ */
 @Component
 public class EazyBankUsernamePwdAuthenticationProvider implements AuthenticationProvider {
 
@@ -38,7 +41,7 @@ public class EazyBankUsernamePwdAuthenticationProvider implements Authentication
             } else {
                 throw new BadCredentialsException("Invalid password!");
             }
-        }else {
+        } else {
             throw new BadCredentialsException("No user registered with this details!");
         }
     }
