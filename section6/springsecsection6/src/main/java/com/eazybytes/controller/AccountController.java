@@ -1,5 +1,6 @@
 package com.eazybytes.controller;
 
+import com.eazybytes.model.AccountDTO;
 import com.eazybytes.model.Accounts;
 import com.eazybytes.repository.AccountsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,9 +17,10 @@ public class AccountController {
     @GetMapping("/myAccount")
     public Accounts getAccountDetails(@RequestParam int id) {
         Accounts accounts = accountsRepository.findByCustomerId(id);
-        if (accounts != null ) {
+
+        if (accounts != null) {
             return accounts;
-        }else {
+        } else {
             return null;
         }
     }

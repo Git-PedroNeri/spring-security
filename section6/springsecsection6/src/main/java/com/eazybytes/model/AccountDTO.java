@@ -2,6 +2,8 @@ package com.eazybytes.model;
 
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import lombok.Builder;
+import lombok.Data;
+import lombok.experimental.SuperBuilder;
 
 /**
  * @author pedro.neri
@@ -10,6 +12,9 @@ import lombok.Builder;
  * @createat 11/10/2023
  */
 
-@Builder
-public class AccountDTO extends Accounts {
+@SuperBuilder
+@Data
+public class AccountDTO {
+
+    String name;
 }
