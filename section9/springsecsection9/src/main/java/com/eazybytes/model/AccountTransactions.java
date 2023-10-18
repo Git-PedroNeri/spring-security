@@ -8,106 +8,106 @@ import jakarta.persistence.Table;
 import java.sql.Date;
 
 @Entity
-@Table(name="account_transactions")
+@Table(name = "account_transactions")
 public class AccountTransactions {
-	
-	@Id
-	@Column(name = "transaction_id")
-	private String transactionId;
-	
-	@Column(name="account_number")
-	private long accountNumber;
-	
-	@Column(name = "customer_id")
-	private int customerId;
-	
-	@Column(name="transaction_dt")
-	private Date transactionDt;
-	
-	@Column(name = "transaction_summary")
-	private String transactionSummary;
-	
-	@Column(name="transaction_type")
-	private String transactionType;
-	
-	@Column(name = "transaction_amt")
-	private int transactionAmt;
-	
-	@Column(name = "closing_balance")
-	private int closingBalance;
-	
-	@Column(name = "create_dt")
-	private String createDt;
 
-	public String getTransactionId() {
-		return transactionId;
-	}
+    @Id
+    @Column(name = "transaction_id")
+    private String transactionId;
 
-	public void setTransactionId(String transactionId) {
-		this.transactionId = transactionId;
-	}
+    @Column(name = "account_number")
+    private long accountNumber;
 
-	public long getAccountNumber() {
-		return accountNumber;
-	}
+    @Column(name = "customer_id")
+    private int customerId;
 
-	public void setAccountNumber(long accountNumber) {
-		this.accountNumber = accountNumber;
-	}
+    @Column(name = "transaction_dt")
+    private Date transactionDt;
 
-	public int getCustomerId() {
-		return customerId;
-	}
+    @Column(name = "transaction_summary")
+    private String transactionSummary;
 
-	public void setCustomerId(int customerId) {
-		this.customerId = customerId;
-	}
+    @Column(name = "transaction_type")
+    private String transactionType;
 
-	public Date getTransactionDt() {
-		return transactionDt;
-	}
+    @Column(name = "transaction_amt")
+    private int transactionAmt;
 
-	public void setTransactionDt(Date transactionDt) {
-		this.transactionDt = transactionDt;
-	}
+    @Column(name = "closing_balance")
+    private int closingBalance;
 
-	public String getTransactionSummary() {
-		return transactionSummary;
-	}
+    @Column(name = "create_dt")
+    private String createDt;
 
-	public void setTransactionSummary(String transactionSummary) {
-		this.transactionSummary = transactionSummary;
-	}
+    public String getTransactionId() {
+        return transactionId;
+    }
 
-	public String getTransactionType() {
-		return transactionType;
-	}
+    public void setTransactionId(String transactionId) {
+        this.transactionId = transactionId;
+    }
 
-	public void setTransactionType(String transactionType) {
-		this.transactionType = transactionType;
-	}
+    public long getAccountNumber() {
+        return accountNumber;
+    }
 
-	public int getTransactionAmt() {
-		return transactionAmt;
-	}
+    public void setAccountNumber(long accountNumber) {
+        this.accountNumber = accountNumber;
+    }
 
-	public void setTransactionAmt(int transactionAmt) {
-		this.transactionAmt = transactionAmt;
-	}
+    public int getCustomerId() {
+        return customerId;
+    }
 
-	public int getClosingBalance() {
-		return closingBalance;
-	}
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
+    }
 
-	public void setClosingBalance(int closingBalance) {
-		this.closingBalance = closingBalance;
-	}
+    public Date getTransactionDt() {
+        return transactionDt;
+    }
 
-	public String getCreateDt() {
-		return createDt;
-	}
+    public void setTransactionDt(Date transactionDt) {
+        this.transactionDt = transactionDt;
+    }
 
-	public void setCreateDt(String createDt) {
-		this.createDt = createDt;
-	}
+    public String getTransactionSummary() {
+        return transactionSummary;
+    }
+
+    public void setTransactionSummary(String transactionSummary) {
+        this.transactionSummary = transactionSummary;
+    }
+
+    public String getTransactionType() {
+        return transactionType;
+    }
+
+    public void setTransactionType(String transactionType) {
+        this.transactionType = transactionType;
+    }
+
+    public int getTransactionAmt() {
+        return transactionAmt;
+    }
+
+    public void setTransactionAmt(int transactionAmt) {
+        this.transactionAmt = transactionAmt;
+    }
+
+    public int getClosingBalance() {
+        return closingBalance;
+    }
+
+    public void setClosingBalance(int closingBalance) {
+        this.closingBalance = closingBalance;
+    }
+
+    public String getCreateDt() {
+        return createDt;
+    }
+
+    public void setCreateDt(String createDt) {
+        this.createDt = createDt;
+    }
 }
