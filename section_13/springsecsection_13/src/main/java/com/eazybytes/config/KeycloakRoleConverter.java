@@ -11,7 +11,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class KeycloakRoleConverter  implements Converter<Jwt, Collection<GrantedAuthority>> {
+
+/*
+ * Classe responsavel por receber o token vindo do keycloak e converter em um objeto em que o spring conhece
+ * Diz para o spring que eh o servidor de autenticação
+ * */
+public class KeycloakRoleConverter implements Converter<Jwt, Collection<GrantedAuthority>> {
 
     @Override
     public Collection<GrantedAuthority> convert(Jwt jwt) {

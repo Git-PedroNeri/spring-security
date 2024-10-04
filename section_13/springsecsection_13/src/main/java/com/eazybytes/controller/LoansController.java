@@ -5,6 +5,7 @@ import com.eazybytes.model.Loans;
 import com.eazybytes.repository.CustomerRepository;
 import com.eazybytes.repository.LoanRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,6 +22,7 @@ public class LoansController {
     private CustomerRepository customerRepository;
 
     @GetMapping("/myLoans")
+    @PreAuthorize("hasAnyRole('USER')")
     public List<Loans> getLoanDetails(@RequestParam String email) {
         List<Customer> customers = customerRepository.findByEmail(email);
         if (customers != null && !customers.isEmpty()) {
